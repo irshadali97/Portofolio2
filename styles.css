@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+   
+}
+section {
+    padding: 100px;
+}
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background: url(./images/bg-image.jpeg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner h2 {
+    font-size: 3em;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+.banner h2 span {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.banner h3 {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.btn {
+    position: relative;
+    background: #2196f3;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+header.sticky {
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+header .logo {
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+header.sticky .logo {
+    color: #111;
+}
+header ul {
+    display: flex;
+    position: relative;  
+}
+header ul li {
+    position: relative;
+    list-style: none;
+}
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+header.sticky ul li a {
+    color: #111;
+}
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+.heading h2 {
+    font-weight: 600;
+    font-size: 30px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+}
+.contentBx {
+    padding-right: 30px;
+}
+.contentBx h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.contentBx p {
+    letter-spacing: 1px;
+}
+.w50 {
+    min-width: 50%;
+}
+img {
+    max-width: 100%;
+}
+.skills {
+    background-color: #111;
+}
+.skills h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+.skills h3 {
+    display: inline-block;
+    color: #fff;
+}
+.skills p {
+    float: right;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+.skills li {
+    margin: 20px 0;
+    list-style: none;
+}
+.bar {
+    background: #353b48;
+    margin: 10px 0;
+    display: block;
+    height: 15px;
+    border: 1px solid rgb(0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 6px #111;
+}
+.bar span {
+    height: 14px;
+    float: left;
+    background-color: #2196f3;
+}
+.html {
+    width: 60%;
+    animation: html 5s;
+}
+.css {
+    width: 40%;
+    animation: css 5s;
+}
+.javascript {
+    width: 20%;
+    animation: javascript 5s;
+}
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+    }
+}
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 40%;
+    }
+}
+@keyframes javacript {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 20%;
+    }
+}
+.projects .content {
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+        
+
+}
+.projects .content .workBx {
+         width: 50%;
+         padding: 20px;
+         background: #f7f7f7;
+}
+.projects .content .workBx img {
+    max-width: 100%;
+}
+.hobbies {
+    background: #f7f7f7;
+}
+.hobbies .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.hobbies .content .hobbiesBx {
+    min-width: 20%;
+    margin: 10px;
+    padding: 30px 30px;
+    background: #2196f3;
+    color: #fff;
+}
+.hobbies .content .hobbiesBx h3 {
+    text-align: center;
+    font-size: 24px;
+}
+.hobbies .content .hobbiesBx .hobbies-icon {
+    padding: 15px 30%;
+    font-size: 3rem;
+}
+.contact {
+    background: #111;
+}
+.contact .heading h2{
+    color: #fff;
+}
+.contact .heading p{
+    color: #fff;
+} 
+/*.lastbx {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+.contactInfo h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.contactInfo {
+    min-width: 40%;
+}
+.contactInfoBx {
+    position: relative;
+    display: flex;
+    margin-left: 10%;
+}
+.contactInfoBx .Box {
+    margin-right: 50px;
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contactInfoBx .Box .icon {
+    min-width: 40px;
+    padding-left: 4px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px;
+}
+.contactInfoBx .Box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+    color: #fff;
+}
+.contactInfoBx .Box .text h3 {
+    font-weight: 500;
+    color: #2196f3;
+    margin-bottom: 0;
+}
+.social ul {
+     display: flex;
+     justify-content: center;
+     margin: 20px auto;
+}
+.social ul li {
+    list-style: none;
+}
+.social ul li a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #2196f3;
+    font-size: 1.9rem;
+}
+.social ul li a:hover {
+   color: #fff;
+    transition: 0.1s;
+}
+.copyright {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+@media (max-width : 1024px) {
+    header, 
+    header.sticky {
+        padding: 20px;
+        z-index: 1000;
+    }
+   .menu {
+        position: fixed;
+        top: 76px;
+        left: -100%;
+        display: block;
+        padding: 100px 40px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0,0,0,0.2);
+    }
+    .menu.active {
+        left: 0;
+    }
+    
+     header ul li a {
+        color: #111;
+        font-size: 24px;
+        margin: 10px;
+    }
+    .toggle {
+        width: 40px;
+        height: 40px;
+        background: url(./images/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    } 
+    .toggle.active {
+        background: url(./images/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+    header.sticky .toggle {
+        filter: invert(1);
+    }
+    section {
+        padding: 30px;
+    }
+    .banner h2 {
+        font-size: 2.3em;
+        font-weight: 400;
+        line-height: 1.4em;
+    }
+    .banner h2 span {
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+    .banner h3 {;
+        font-size: 1.3em;
+        font-weight: 400;
+    }
+    .btn {
+        padding: 10px 20px;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+    .contentBx {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .projects .content .workBx {
+        width: 100%;
+    }
+    .w50 img {
+        border-radius: 50%;
+    }
+    .contactInfoBx {
+        display: flex;
+        flex-direction: column;
+    }
+    .contactInfoBx .Box {
+        margin-right: 0px;
+    }
+    .contactInfoBx .Box .text {
+        margin-left: 0px;
+    }
+    .copyright {
+        font-size: 11px;
+    }
+    
+}
+
